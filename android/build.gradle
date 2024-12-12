@@ -28,18 +28,18 @@ android {
     namespace "com.yanisalfian.flutterphonedirectcaller"
     compileSdkVersion 31
 
+    sourceSets {
+        main.java.srcDirs += 'src/main/kotlin'
+    }
+
     defaultConfig {
         minSdkVersion 16
         targetSdkVersion 31
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
 
-    compileOptions {
-        sourceCompatibility = JavaVersion.VERSION_17
-        targetCompatibility = JavaVersion.VERSION_17
-    }
-    kotlinOptions {
-        jvmTarget = "17"
+    lintOptions {
+        disable 'InvalidPackage'
     }
 }
 
