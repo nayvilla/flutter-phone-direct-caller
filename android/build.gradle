@@ -33,6 +33,15 @@ android {
         targetSdkVersion 31
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
     }
+
+    compileOptions {
+        sourceCompatibility = JavaVersion.VERSION_18
+        targetCompatibility = JavaVersion.VERSION_18
+    }
+
+    kotlinOptions {
+        jvmTarget = "17" // Asegura compatibilidad con Java 17
+    }
 }
 
 dependencies {
