@@ -2,6 +2,19 @@
 
 A simple plugin to call number directly from app, without going to phone dialer. Permission request is handled by plugin.
 
+---
+
+## ⚠️ Fork Notice
+This is a **fork** of the [original flutter-phone-direct-caller repository](https://github.com/yanisalfian/flutter-phone-direct-caller). The purpose of this fork is to address compatibility issues with the Android Gradle Plugin 8.X+ by adding a `namespace` attribute and removing the deprecated `package` attribute in the AndroidManifest.xml file.
+
+### Changes in This Fork:
+1. Added a `namespace` property to the `build.gradle` file to comply with newer Android Gradle Plugin requirements.
+2. Removed the `package` attribute from the `AndroidManifest.xml` file to fix build issues with AGP 8.X+.
+
+If you're looking for the original, unmodified version, please visit the [original repository](https://github.com/yanisalfian/flutter-phone-direct-caller).
+
+---
+
 ## Usage
 
 Add dependency to pubspec.yaml file
